@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         // для tvColor и tvSize необходимо создавать контекстное меню
         registerForContextMenu(tvColor);
         registerForContextMenu(tvSize);
-
     }
 
     @Override
