@@ -52,3 +52,4 @@ public class MainActivity extends AppCompatActivity {
         linLayout.addView(btn2, rightGravityParams);
     }
 }
+
