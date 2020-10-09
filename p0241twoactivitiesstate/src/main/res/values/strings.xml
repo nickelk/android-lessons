@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TwoActivitiesState</string>
+    <string name="hello">Hello main activity</string>
+</resources>

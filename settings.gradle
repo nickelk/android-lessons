@@ -1,3 +1,5 @@
+include ':p0241twoactivitiesstate'
+include ':p0231oneactivitystate'
 include ':p0211twoactivity'
 include ':p0201simpleanimation'
 include ':p0191simplecalculator'
