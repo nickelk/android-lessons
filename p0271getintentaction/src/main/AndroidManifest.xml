@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ua.startandroid.p0261intentfilter">
+    package="ua.startandroid.p0271getintentaction">
 
     <application
         android:allowBackup="true"
@@ -9,27 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityDateEx" android:label="Date Extended">
-            <intent-filter>
-                <action android:name="ua.startandroid.intent.action.showdate" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".ActivityDate" android:label="Date basic">
-            <intent-filter>
-                <action android:name="ua.startandroid.intent.action.showdate" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".ActivityTime" android:label="Time basic">
+        <activity android:name=".Info" android:label="Date/time info">
             <intent-filter>
                 <action android:name="ua.startandroid.intent.action.showtime" />
+                <action android:name="ua.startandroid.intent.action.showdate" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
