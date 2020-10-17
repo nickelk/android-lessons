@@ -39,6 +39,7 @@
             <option value="$PROJECT_DIR$/p0321simplebrowser" />
             <option value="$PROJECT_DIR$/p0331sharedpreferences" />
             <option value="$PROJECT_DIR$/p0401layoutinflater" />
+            <option value="$PROJECT_DIR$/p0411layoutinflaterlist" />
             <option value="$PROJECT_DIR$/p1071actionbaritems" />
           </set>
         </option>
