@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+            public void onScroll(AbsListView view, int firstVisibleItem,
+                                 int visibleItemCount, int totalItemCount) {
 //                    Log.d(LOG_TAG, "scroll: firstVisibleItem = " + firstVisibleItem
 //                            + ", visibleItemCount" + visibleItemCount
 //                            + ", totalItemCount" + totalItemCount);

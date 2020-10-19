@@ -1,3 +1,4 @@
+include ':p0451expandablelist'
 include ':p0441simplelistevents'
 include ':p0431simplelistchoice'
 include ':p0421simplelist'
