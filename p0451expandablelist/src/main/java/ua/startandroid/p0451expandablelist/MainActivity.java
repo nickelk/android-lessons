@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
     // названия телефонов (элементов)
     String[] phonesHTC = new String[] {"Sensation", "Desire", "Wildfire", "Hero"};
+    String[] colorsHTC = new String[] {"red", "black", "white", "purple"};
+    String[] pricesHTC = new String[] {"4000", "5000", "6000", "7000"};
+
     String[] phonesSams = new String[] {"Galaxy S II", "Galaxy Nexus", "Wave"};
     String[] phonesLG = new String[] {"Optimus", "Optimus Link", "Optimus Black", "Optimus One"};
 
@@ -61,11 +64,17 @@ public class MainActivity extends AppCompatActivity {
         // создаем коллекцию элементов для первой группы
         childDataItem = new ArrayList<Map<String, String>>();
         // заполняем список атрибутов для каждого элемента
+        int i = 0;
+        int k = 0;
         for (String phone : phonesHTC) {
             m = new HashMap<String, String>();
             m.put("phoneName", phone); // название телефона
+            m.put("phoneColor", colorsHTC[i]); // color телефона
+            m.put("phonePrice", pricesHTC[k]); // price телефона
+            i++; k++;
             childDataItem.add(m);
         }
+
         // добавляем в коллекцию коллекций
         childData.add(childDataItem);
 
@@ -88,9 +97,9 @@ public class MainActivity extends AppCompatActivity {
         childData.add(childDataItem);
 
         // список атрибутов элементов для чтения
-        String childFrom[] = new String[] {"phoneName"};
+        String childFrom[] = new String[] {"phoneName", "phoneColor", "phonePrice"};
         // список ID view-элементов, в которые будет помещены атрибуты элементов
-        int childTo[] = new int[] {android.R.id.text1};
+        int childTo[] = new int[] {R.id.textView1, R.id.textView2, R.id.textView3};
 
         SimpleExpandableListAdapter adapter = new SimpleExpandableListAdapter(
                 this,
@@ -99,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 groupFrom,
                 groupTo,
                 childData,
-                android.R.layout.simple_list_item_1,
+                R.layout.my_simple_list_item,
                 childFrom,
                 childTo);
 
