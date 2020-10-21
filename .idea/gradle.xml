@@ -44,6 +44,7 @@
             <option value="$PROJECT_DIR$/p0431simplelistchoice" />
             <option value="$PROJECT_DIR$/p0441simplelistevents" />
             <option value="$PROJECT_DIR$/p0451expandablelist" />
+            <option value="$PROJECT_DIR$/p0461expandablelistevents" />
             <option value="$PROJECT_DIR$/p1071actionbaritems" />
           </set>
         </option>
